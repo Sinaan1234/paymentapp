@@ -10,7 +10,7 @@ import { errorLogger, errorHandler } from "./middleware/error.js";
 const app = express();
 
 app.use((_req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "https://stripe-frontend-4lzz.onrender.com");
+  res.setHeader("Access-Control-Allow-Origin", "https://stripe-frontend-one.vercel.app");
   res.setHeader(
     "Access-Control-Allow-Methods",
     "GET,POST,PATCH,DELETE,OPTIONS"
