@@ -25,8 +25,8 @@ const checkout = catchAsync(async (req, res) => {
     payment_method_types: ["card"],
     line_items: [line_item],
     mode: "payment",
-    success_url: `${process.env.FRONTEND_URL}/subscription/success?user_id=${userId}&plan_id=${plan}&is_month=${isMonth}`,
-    cancel_url: `${process.env.FRONTEND_URL}/subscription`,
+    success_url: `${process.env.FRONTEND_URL}/#/subscription/success?user_id=${userId}&plan_id=${plan}&is_month=${isMonth}`,
+    cancel_url: `${process.env.FRONTEND_URL}/#/subscription`,
   });
   res.json({ id: session.id });
 });
